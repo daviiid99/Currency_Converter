@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/banner" />
+
+            <TextView
+                android:id="@+id/enterCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="30dp"
+                android:text="Convertir una divisa"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/userInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:foregroundTint="@color/design_default_color_on_primary"
+                android:hint="Introduce una cantidad"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColorHint="@color/white" />
+
+            <Button
+                android:id="@+id/dolarToEuro"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/white"
+                android:backgroundTint="#CD0505"
+                android:shadowColor="@color/white"
+                android:text="DOLAR > EURO"
+                app:iconTint="#D50B0B" />
+
+            <Button
+                android:id="@+id/euroToDolar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/white"
+                android:backgroundTint="#CD0505"
+                android:shadowColor="@color/white"
+                android:text="EURO > DOLAR"
+                app:iconTint="#D50B0B" />
+
+            <TextView
+                android:id="@+id/currencyResultTitle"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="30dp"
+                android:text="Resultado"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/currencyResult"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
